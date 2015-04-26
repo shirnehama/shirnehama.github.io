@@ -1,10 +1,3 @@
-
-/*https://dribbble.com/shots/2016837-Kickpush-website-preview?list=shots&sort=popular&timeframe=now&offset=32
-
-Pink #EE5351 
-
-*/
-
 body {	
 	font-family:Lato;
 }
@@ -87,6 +80,8 @@ a{
 }
 .circle:hover{	
 	transition: all 1s ease;
+	-moz-transition:all 1s ease;
+	-webkit-transition:all 1s ease;
 	opacity: .65;
     cursor: pointer;
 }
@@ -354,6 +349,7 @@ a{
 	margin: 10px 50px;
 	float: left;
 	font-size: 16;
+	position: relative;
 	
 }
 
@@ -527,9 +523,11 @@ a{
 }
 
 .arrow#interest-arrow{
-	z-index:110;
-	right: 100%;
-	top: 100%;
+	z-index:10;
+	left: -15px;
+	top: 20px;
+	width: 15px;
+	height: 15px;
 }
 
 .date{
@@ -549,4 +547,10 @@ a{
 
 .professional-item#professional-date{
 	background-color: white;
+}
+
+/*Extra*/
+
+.no-scroll {
+	overflow: hidden;
 }

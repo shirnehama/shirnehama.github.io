@@ -41,6 +41,7 @@ $(document).ready(function(){
 	
 	$(".circle#circle-contact").click(function(){
 		$("#contact-container").show();
+		$('body').addClass("no-scroll");
 	});
 	
 	//Click Home Button
@@ -54,20 +55,23 @@ $(document).ready(function(){
 	});
 	
 	//Contact Me
-	// IMPLEMENT "HIDE MODAL" WHEN "CLICK ON SUBMIT BUTTON FROM MODAL BOX" HERE
 	$("#submit").click(function(){
 		$("#contact-container").hide();
+		$('body').removeClass("no-scroll");
 	});
 
-	// IMPLEMENT "HIDE MODAL" WHEN "CLICK ON CANCEL BUTTON FROM MODAL BOX" HERE
 	$("#cancel").click(function(){
 		$("#contact-container").hide();
+		$('body').removeClass("no-scroll");
 	});
 	
-	// IMPLEMENT "HIDE MODAL" WHEN "CLICK ON MODAL OVERLAY" HERE
 	$("#modal-overlay").click(function(){
 		$("#contact-container").hide();
+		$('body').removeClass("no-scroll");
 	});
-	
 
+	//Test
+	$(".interest-item").hover(function(){
+		$(".arrow#interest-arrow").css({"transform": "rotate(360deg)","transition-duration": "2s"});
+	});	
 });
