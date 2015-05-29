@@ -15,10 +15,13 @@ $(document).ready(function(){
 	
 	
 	$(".circle#circle-me").click(function(){
+		var num = $(window).width()/2;
+		var n = num.toString();
+		
 		$("#title").fadeOut();
-		$(this).css("transform","translate(500%,150px)");
+		$(this).css("transform","translate("+n+"px,150px)");
 		setTimeout( function(){
-			$(".circle#circle-me").css({"transform":"translate(500%,120px)"});
+			$(".circle#circle-me").css({"transform":"translate("+n+"px,120px)"});
 			},800);
 		$("#me-container").delay(1000).fadeIn();
 		$("#arrow-button").fadeIn();
@@ -28,10 +31,12 @@ $(document).ready(function(){
 	});
 	
 	$(".circle#circle-works").click(function(){
+		var num = $(window).width()/2;
+		var n = num.toString();
 		$("#title").fadeOut();
-		$(this).css("transform","translate(500%,300px)");
+		$(".circle#circle-works").css("transform","translate("+n+"px,300px)");
 		setTimeout( function(){
-			$(".circle#circle-works").css({"transform":"translate(500%,120px)"});
+			$(".circle#circle-works").css({"transform":"translate("+n+"px,120px)"});
 			},800);
 		$("#works-container").delay(1000).fadeIn();
 		$("#arrow-button").fadeIn();
