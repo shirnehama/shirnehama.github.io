@@ -16,6 +16,56 @@ a{
     padding: 0px 0px;
 }
 
+#about{
+	color:#3E3D45;
+	font-size: 14;
+	position: absolute;
+	right: 3%;
+	top: 3%;
+}
+
+#about:hover{
+	opacity:.35;
+	cursor:pointer;
+}
+
+#about-container{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 100;
+	display: none;
+}
+
+#about-box{
+	width: 400px;
+	height: 280px;
+	background: #EE5351 ;
+	position: absolute;
+	z-index: 100;
+	top: calc(25%);
+	left: 35%;
+}
+
+#about-header{
+	color: white;
+	font-size: 20;
+	font-weight: 100;
+	left: 5%; 
+	top: 10%;
+	position: absolute; 
+}
+
+#about-body{
+	color: #F8F8F8;;
+	font-size: 14;
+	font-weight: 200;
+	position: absolute; 
+	left: 5%;
+	right: 5%;
+	top: 25%;
+}
+
 #title{
 	position: absolute;
 	top: 25%;
@@ -110,7 +160,7 @@ a{
 	z-index: 100;
 	display: none;
 }
-#modal-overlay{
+.modal-overlay{
 	width: 100%;
 	height:100%;
 	background: rgba(0,0,0,0.7);

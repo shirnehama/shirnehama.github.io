@@ -11,6 +11,12 @@ $(document).ready(function(){
 		
 	});
 	
+	//Click About this Website
+	$("#about").click(function(){
+		$("#about-container").show();
+		
+	});
+	
 	//Click circles
 	
 	
@@ -70,8 +76,9 @@ $(document).ready(function(){
 		$('body').removeClass("no-scroll");
 	});
 	
-	$("#modal-overlay").click(function(){
+	$(".modal-overlay").click(function(){
 		$("#contact-container").hide();
+		$("#about-container").hide();
 		$('body').removeClass("no-scroll");
 	});
 
